@@ -1,0 +1,22 @@
+{
+  "name": "web-designs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass natours/sass/main.scss natours/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teepha/web-designs.git"
+  },
+  "author": "teepha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teepha/web-designs/issues"
+  },
+  "homepage": "https://github.com/teepha/web-designs#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
