@@ -229,9 +229,36 @@
 .gallery {
   display: flex;
 
+  &__item {
+    position: relative;
+
+    &:hover {
+      .gallery__photo {
+        filter: blur(3px) brightness(80%);
+      }
+      .gallery__caption {
+        opacity: 1;
+      }
+    }
+  }
+
   &__photo {
     width: 100%;
     display: block;
+  }
+
+  &__caption {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
   }
 }
 
